@@ -1,0 +1,37 @@
+.score{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #50ebb9bd;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 15px rgb(0, 0, 0, 26%);
+}
+
+.score > h3{
+  color: #2a2a2a;
+  font-size: 1.5rem;
+}
+
+.score > p{
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.points{
+  font-weight: 600;
+  color: #0ca30c;
+}
+
+.score > button{
+  display: block;
+  margin: 0.5rem 0;
+  width: 3rem;
+  border: 0;
+  background: #0ca30c;
+  padding: 5px;
+  border-radius: 5px;
+  color: #ededed;
+  font-weight: 600;
+  cursor: pointer;
+}

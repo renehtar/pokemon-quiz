@@ -1,0 +1,147 @@
+.loading{
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 5px;
+  margin-bottom: -10px;
+}
+
+.loadingBall{
+  animation: rotateBoll 1.2s infinite ease-in-out;
+}
+
+.form {
+  max-width: 35rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 2px solid #50ebb9bd;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 20%);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.form > fieldset{
+  padding: 0 10px 10px 10px;
+  border: 2px solid #50ebb9bd;
+}
+
+.form > fieldset > legend{
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 5px;
+  border-radius: 1.2rem 0 1.2rem 0;
+  margin: 1rem auto;
+  color: #ededed;
+  background: blue;
+}
+
+.form > fieldset > legend > img{
+  width: 1.8rem;
+  height: fit-content;
+  filter: drop-shadow(0 0 5px #ededed);
+}
+
+.questionBox{
+  display: grid;
+  grid-template-areas:
+  'a a'
+  'b c';
+  gap: 0.5rem;
+}
+
+.pokemonImageBox{
+  display: flex;
+  justify-content: center;
+  grid-area: a;
+  margin: 0.5rem 0;
+  background-color: white;
+}
+
+.questionTitle{
+  grid-area: b;
+  margin-bottom: 1rem;
+  color: #202020;
+}
+
+.currentQuestion{
+  height: fit-content;
+  width: fit-content;
+  grid-area: c;
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: 600;
+  text-shadow: black 0px 0px;
+  color: white;
+}
+
+.answerBox{
+  display: grid;
+  gap: 1rem;
+}
+
+.answer{
+  background: white;
+  box-shadow: 0 2px 10px rgb(0, 0, 0, 20%);
+  border-radius: 6px;
+  transition: 0.3s ease;
+}
+
+.answer:hover{
+  background: #c4c4c4;
+}
+
+.answer > label{
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 5px 10px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.answer > label > input{
+  all:unset
+}
+
+.answer:has(input:checked){
+  color: #ededed;
+  background-color: #16c172;
+}
+
+.answer:has(input:checked) > label > svg{
+  filter: drop-shadow(0 4px 6px #cecece);
+}
+
+.buttonBox{
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.buttonBox > button{
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+  color: #ededed;
+  font-weight: 600;
+  background: #16c172;
+}
+
+@keyframes rotateBoll {
+  0%{
+    transform: rotateZ(0deg);
+  }
+  25%{
+    transform: rotateZ(45deg);
+    color: red;
+  }
+  65%{
+    transform: rotateZ(-45deg);
+    color: '';
+  }
+  80%{
+    transform: rotateZ(0deg);
+  }
+}
