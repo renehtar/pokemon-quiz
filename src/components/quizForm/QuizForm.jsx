@@ -64,7 +64,7 @@ export default function QuizForm({ setShowScore, setDataUser }) {
         <>
           <legend>
             <h1>pokémon quiz</h1>
-            <img src="https://cdn-icons-png.flaticon.com/512/287/287221.png" alt="" />
+            <img src="https://cdn-icons-png.flaticon.com/512/287/287221.png" alt="icon de uma pokebola" />
           </legend>
 
           <div className={Style.questionBox}>
