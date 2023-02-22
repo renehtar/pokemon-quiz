@@ -15,4 +15,4 @@ npm install
 npm run dev
 ```
 
-Depois disso, acesse o link indicado no seu terminal.
+Depois disso, acesse o link indicado no seu terminal ou acesse o site online <a href='https://pokemon-quiz-six.vercel.app/'>aqui</a>.
